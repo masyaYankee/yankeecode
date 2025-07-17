@@ -1,214 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Имя Фамилия | Визитка</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-
-      /* Фото: кружок подсветки + фон */
-      .photo-wrapper {
-        width: 8rem; /* 32 * 2 = 64px, 8rem = 128px */
-        height: 8rem;
-        margin: 0 auto;
-        border-radius: 9999px; /* полный круг */
-        padding: 6px; /* толщина "кружка" */
-        background: conic-gradient(
-          from 180deg at 50% 50%,
-          #6366f1,
-          #a78bfa,
-          #6366f1
-        ); /* фиолетовый градиент */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: box-shadow 0.4s ease;
-      }
-
-      .photo-wrapper:hover {
-        box-shadow: 0 0 15px 4px rgba(99, 102, 241, 0.7);
-        transform: scale(1.05);
-        transition: all 0.4s ease;
-      }
-
-      .photo-wrapper img {
-        width: 6.5rem; /* 104px */
-        height: 6.5rem;
-        border-radius: 9999px;
-        object-fit: cover;
-        background-color: white;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.4s ease;
-      }
-
-      .photo-wrapper img:hover {
-        transform: scale(1.05);
-      }
-
-      /* Карточки услуг - подсветка */
-      .grid > div {
-        transition: background-color 0.3s ease, box-shadow 0.3s ease,
-          transform 0.3s ease;
-        cursor: pointer;
-      }
-      .grid > div:hover {
-        background-color: #e0e7ff; /* indigo-100 */
-        box-shadow: 0 10px 15px rgba(99, 102, 241, 0.4);
-        transform: translateY(-5px);
-      }
-      .grid > div:active {
-        transform: translateY(-2px);
-      }
-    </style>
-  </head>
-  <body class="bg-gray-100 text-gray-800">
-    <!-- Hero -->
-    <section class="bg-white py-20 px-6 text-center">
-      <div class="photo-wrapper">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Фото"
-          class="photo"
-        />
-      </div>
-      <h1 class="text-3xl font-bold mt-6">Имя Фамилия</h1>
-      <p class="text-gray-600">Ваша профессия или деятельность</p>
-    </section>
-
-    <!-- About -->
-    <section class="py-16 px-6 max-w-3xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Обо мне</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Здесь будет краткий текст о вас. Расскажите, кто вы, чем занимаетесь,
-        какие у вас ценности и цели.
-      </p>
-    </section>
-
-    <!-- Projects / Services -->
-    <section class="bg-white py-16 px-6">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold mb-8 text-center">Чем я занимаюсь</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gray-100 p-6 rounded-xl shadow">
-            <h3 class="font-bold mb-2">Услуга 1</h3>
-            <p>Описание услуги или проекта. Чем вы можете помочь.</p>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-xl shadow">
-            <h3 class="font-bold mb-2">Услуга 2</h3>
-            <p>Описание услуги или проекта. Чем вы можете помочь.</p>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-xl shadow">
-            <h3 class="font-bold mb-2">Услуга 3</h3>
-            <p>Описание услуги или проекта. Чем вы можете помочь.</p>
-          </div>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="PC gaming news, reviews, and guides">
+    <meta name="description" content="">
+    <title>Главная</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.10.10, nicepage.com">
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script:400">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Главная.html" data-home-page-title="Главная" data-path-to-root="./" data-include-products="true" class="u-body u-overlap u-xl-mode" data-lang="ru">
+    <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-1" id="sec-8b8e" src="" data-image-width="1980" data-image-height="1114">
+      <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <h2 class="u-subtitle u-text u-text-1">Сайт на стадии разработки!! </h2>
+        <h3 class="u-text u-text-2">Уже скоро тут вы увидите наш новый лаунчер и прекрасные сборки!<br>
+        </h3>
+        <img class="u-hover-feature u-image u-image-circle u-image-contain u-preserve-proportions u-image-1" src="images/ya.jpg" alt="" data-image-width="1000" data-image-height="1000" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="" title="Telegram" data-href="https://t.me/masya_yankovskiy">
+        <h3 class="u-text u-text-3">При поддержке The Marzano Family </h3>
+        <img class="u-image u-image-round u-preserve-proportions u-radius u-image-2" src="images/photo_2025-06-24_10-58-23.jpg" alt="" data-image-width="640" data-image-height="640" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
+        <a href="https://t.me/masya_yankovskiy" class="u-active-white u-border-0 u-btn u-button-style u-hover-feature u-hover-white u-none u-text-active-black u-text-hover-black u-btn-1" title="Telegram">Заказать телеграм бота </a>
+        <p class="u-custom-font u-hover-feature u-small-text u-text u-text-variant u-text-4">Prod by Yankee </p>
+        <div class="u-hover-feature u-social-icons u-social-icons-1">
+          <a class="u-social-url" target="_blank" data-type="Telegram" title="Telegram" href="https://t.me/masya_yankovskiy"><span class="u-icon u-social-icon u-social-telegram u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-ad57"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ad57"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M18.4,53.2l64.7-24.9c3-1.1,5.6,0.7,4.7,5.3l0,0l-11,51.8c-0.8,3.7-3,4.6-6.1,2.8L53.9,75.8l-8.1,7.8
+	c-0.9,0.9-1.7,1.6-3.4,1.6l1.2-17l31.1-28c1.4-1.2-0.3-1.9-2.1-0.7L34.2,63.7l-16.6-5.2C14,57.4,14,54.9,18.4,53.2L18.4,53.2z"></path></svg></span>
+          </a>
+        </div>
+        <div class="u-hover-feature u-social-icons u-social-icons-2">
+          <a class="u-social-url" target="_blank" data-type="VK" title="VK" href="https://vk.com/maxyankovskiy"><span class="u-icon u-social-icon u-social-vk u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-77dc"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-77dc"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M88.2,80.7l-9.8,0.1c0,0-2.1,0.4-4.9-1.5c-3.7-2.5-7.2-9.1-9.9-8.2C60.9,72,61,77.9,61,77.9s0,1.3-0.6,1.9
+      c-0.7,0.7-2,0.9-2,0.9H54c0,0-9.7,0.6-18.3-8.3c-9.3-9.7-17.6-29-17.6-29s-0.5-1.3,0-1.9c0.6-0.7,2.2-0.7,2.2-0.7l10.5-0.1
+      c0,0,1,0.2,1.7,0.7c0.6,0.4,0.9,1.2,0.9,1.2s1.7,4.3,4,8.2c4.4,7.6,6.4,9.3,7.9,8.4c2.2-1.2,1.5-10.7,1.5-10.7s0-3.5-1.1-5
+      c-0.9-1.2-2.5-1.5-3.3-1.6c-0.6-0.1,0.4-1.5,1.6-2.1c1.9-0.9,5.2-1,9.2-0.9c3.1,0,4,0.2,5.2,0.5c3.6,0.9,2.4,4.3,2.4,12.4
+      c0,2.6-0.5,6.3,1.4,7.5c0.8,0.5,2.8,0.1,7.7-8.3c2.3-4,4.1-8.6,4.1-8.6s0.4-0.8,1-1.2s1.4-0.3,1.4-0.3l11.1-0.1c0,0,3.3-0.4,3.9,1.1
+      c0.6,1.6-1.2,5.3-5.8,11.3c-7.4,9.9-8.3,9-2.1,14.7c5.9,5.5,7.1,8.1,7.3,8.5C93.4,80.4,88.2,80.7,88.2,80.7z"></path></svg></span>
+          </a>
+        </div>
+        <div class="u-hover-feature u-social-icons u-social-icons-3">
+          <a class="u-social-url" target="_blank" data-type="Custom" title="Discord" href="https://discord.com/users/706186276142972930"><span class="u-file-icon u-icon u-social-custom u-social-icon u-icon-3"><img src="images/discord.png" alt=""></span>
+          </a>
+        </div>
+        <div class="u-hover-feature u-social-icons u-social-icons-4">
+          <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/masia_yancovskiy/?hl=ru"><span class="u-icon u-social-icon u-social-instagram u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-5f6f"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-5f6f"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+          </a>
         </div>
       </div>
+      
+      
+      
+      
+      
+      
+      
     </section>
-
-    <!-- Contact -->
-    <section class="py-16 px-6 max-w-2xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6">Связаться со мной</h2>
-      <form class="grid gap-4">
-        <input
-          type="text"
-          placeholder="Ваше имя"
-          class="p-3 border rounded-xl"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          class="p-3 border rounded-xl"
-        />
-        <textarea
-          rows="4"
-          placeholder="Сообщение"
-          class="p-3 border rounded-xl"
-        ></textarea>
-        <button
-          class="bg-blue-600 text-white py-3 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-300"
-        >
-          Отправить
-        </button>
-      </form>
+    
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80"> This <a href="https://nicepage.com/website-design">Website Design</a> was created with Nicepage 
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6">
-      <p>© 2025 Имя Фамилия. Все права защищены.</p>
-      <div class="mt-4 flex justify-center gap-6">
-        <!-- Telegram Icon -->
-        <a
-          href="#"
-          target="_blank"
-          class="hover:scale-110 transition-transform duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-blue-400 hover:text-white transition-colors"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </a>
-        <!-- GitHub Icon -->
-        <a
-          href="#"
-          target="_blank"
-          class="hover:scale-110 transition-transform duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-blue-400 hover:text-white transition-colors"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 2C6.48 2 2 6.58 2 12.11c0 4.44 2.87 8.2 6.84 9.53.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.33 9.33 0 0112 6.85c.85.01 1.71.12 2.51.34 1.9-1.32 2.73-1.05 2.73-1.05.55 1.42.2 2.46.1 2.72.64.72 1.02 1.63 1.02 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.69.94.69 1.91 0 1.38-.01 2.5-.01 2.84 0 .26.18.58.69.48A10.02 10.02 0 0022 12.11C22 6.58 17.52 2 12 2z"
-            />
-          </svg>
-        </a>
-        <!-- LinkedIn Icon -->
-        <a
-          href="#"
-          target="_blank"
-          class="hover:scale-110 transition-transform duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-blue-400 hover:text-white transition-colors"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-6a6 6 0 016-6zM2 9h4v12H2zM4 4a2 2 0 110 4 2 2 0 010-4z"
-            />
-          </svg>
-        </a>
-      </div>
-    </footer>
-  </body>
-</html>
+  
+</body></html>
